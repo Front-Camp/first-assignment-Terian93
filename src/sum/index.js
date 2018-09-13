@@ -10,7 +10,17 @@
 * sum(-1, 13); // 12
 */
 const sum = (a, b) => {
-  /* your logic here...*/
+  if(Number.isFinite(a)){
+    console.log(a+" "+typeof(a))
+    console.log(b+" "+typeof(b))
+    if(Number.isFinite(b))
+    {
+      console.log(a+b)
+      return a+b
+    }
+    else throw "ERROR"
+  }
+  else throw "ERROR"
 };
 
 export default sum;
